@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Pool;
+using UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,7 +22,7 @@ namespace GameController
             AssetManager.GetInstance();
             GameManager.GetInstance();
             ObjectPool.GetInstance();
-            LevelController.GetInstance();
+            UIManager.GetInstance();
         }
 
         IEnumerator LoadScene()

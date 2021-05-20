@@ -4,27 +4,7 @@ namespace FoldTheWay.UI
 {
     public abstract class Window : MonoBehaviour
     {
-        public abstract bool IsPopup
-        {
-            get;
-        }
-
-        protected virtual void Start()
-        {
-
-        }
-
-        protected virtual void OnEnable()
-        {
-            
-        }
-
-        protected virtual void OnDisable()
-        {
-            
-        }
-
-        public virtual void Preload()
+        public virtual void OnLoad()
         {
             gameObject.SetActive(false);
         }
@@ -33,12 +13,7 @@ namespace FoldTheWay.UI
         {
             gameObject.SetActive(true);
         }
-
-        public virtual void Refresh()
-        {
-
-        }
-
+        
         public virtual void OnHide()
         {
             gameObject.SetActive(false);

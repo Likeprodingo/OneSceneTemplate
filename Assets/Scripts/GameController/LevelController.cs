@@ -1,8 +1,9 @@
-﻿using Util;
+﻿using UnityEngine;
+using Util;
 
 namespace GameController
 {
-    public class LevelController : GameObjectSingleton<LevelController>
+    public class LevelController : MonoBehaviour
     {
     }
 }
